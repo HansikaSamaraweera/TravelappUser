@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HotelConfirmBooking"
+    android:background="@drawable/gradient2">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"/>
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="@string/edit"
+        android:text="@string/edit"
+        android:textColor="@color/colorText" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-45dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="@string/delete"
+        android:text="@string/delete"
+        android:textColor="@color/colorText" />
+
+</LinearLayout>
