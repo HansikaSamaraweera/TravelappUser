@@ -27,7 +27,7 @@ public class HotelConfirmBooking extends AppCompatActivity {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HotelConfirmBooking.this,HotelBooking.class);
+                Intent intent = new Intent(HotelConfirmBooking.this,HotelUserEdit.class);
                 startActivity(intent);
 
             }

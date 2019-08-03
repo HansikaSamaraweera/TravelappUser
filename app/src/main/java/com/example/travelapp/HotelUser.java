@@ -11,6 +11,7 @@ public class HotelUser extends AppCompatActivity {
 
     Button search;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,4 +33,7 @@ public class HotelUser extends AppCompatActivity {
             }
         });
     }
+
+
+
 }
