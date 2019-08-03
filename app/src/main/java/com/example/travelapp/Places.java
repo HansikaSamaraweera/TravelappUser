@@ -7,29 +7,31 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.security.ProtectionDomain;
+public class Places extends AppCompatActivity {
 
-public class HotelUserEdit extends AppCompatActivity {
-
-    Button save;
+    Button place;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotel_user_edit);
+        setContentView(R.layout.activity_places);
 
-        save = findViewById(R.id.save);
+        place = findViewById(R.id.kandy1);
     }
 
     @Override
     protected void onResume(){
         super.onResume();
 
-        save.setOnClickListener(new View.OnClickListener() {
+        place.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HotelUserEdit.this,HotelConfirmBooking.class);
+
+                Intent intent = new Intent(Places.this,UserChoice.class);
                 startActivity(intent);
             }
         });
+
+
+
     }
 }

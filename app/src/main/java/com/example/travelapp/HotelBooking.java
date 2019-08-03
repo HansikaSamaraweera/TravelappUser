@@ -15,7 +15,7 @@ public class HotelBooking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel_booking);
 
-        confirm = findViewById(R.id.confirm);
+        confirm = findViewById(R.id.save);
     }
     @Override
     protected void onResume(){

@@ -21,6 +21,8 @@
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
     <string name="save">Save</string>
+    <string name="signin">SIGN IN</string>
+    <string name="next">Next</string>
 
     <string name="kandy">KANDY</string>
     <string name="anura">ANURADHAPURA</string>
