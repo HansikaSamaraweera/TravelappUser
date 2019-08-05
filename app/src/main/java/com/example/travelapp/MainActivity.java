@@ -26,8 +26,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button place;
-    Button place2;
+    Button sign;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        place = findViewById(R.id.kandy1);
-        place2 = findViewById(R.id.galle);
+        sign = findViewById(R.id.signin);
+
     }
 
     @Override
@@ -103,25 +103,15 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
     protected void onResume(){
         super.onResume();
 
-        place.setOnClickListener(new View.OnClickListener() {
+        sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this,UserChoice.class);
+                Intent intent = new Intent(MainActivity.this,Places.class);
                 startActivity(intent);
             }
         });
-
-        place2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,UserChoice.class);
-            }
-        });
-
     }
 }

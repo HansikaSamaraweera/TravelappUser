@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".HotelBooking"
-    android:background="@drawable/gradient2">
+    android:background="@drawable/gradient2"
+    >
 
 
     <TextView
@@ -106,28 +107,22 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/button_shape"
-        android:textColor="@color/colorText"
-        android:onClick="@string/next"
-        android:text="@string/next" />
+        android:onClick="@string/save"
+        android:text="@string/save"
+        android:textColor="@color/colorText"/>
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Hotel Reservation"
+        android:text=" Edit Your Details"
         android:layout_marginTop="-510dp"
         android:layout_marginLeft="100dp"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25dp"
         android:drawableLeft="@drawable/ic_forum_black_24dp"/>
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fill Your Details"
-        android:layout_marginLeft="160dp"
-        android:textColor="@color/colorPrimaryDark"/>
+
 
 
 </LinearLayout>
